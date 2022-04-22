@@ -30,7 +30,7 @@ class TileBoardWidget extends ConsumerWidget {
       height: _size,
       child: Stack(
         children: [
-          ...List.generate(manager.length, (index) => AnimatedTile(moveController: moveController, child: const Text('Testing'), size: tileSize,),)
+          ...List.generate(manager.length, (index) => AnimatedTile(moveController: moveController, child: Text(manager[index].name), size: tileSize,),)
         ],
       ),
     );
